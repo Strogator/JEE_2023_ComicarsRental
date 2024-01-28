@@ -23,4 +23,5 @@ public interface VehicleService {
 
     void updateVehicle(Vehicle vehicle);
 
+
 }

@@ -13,6 +13,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Service implementation for managing Reservation entities.
+ * Author : Alessio Comi.
+ */
+
 @Service
 public class ReservationServiceImpl implements ReservationService {
 

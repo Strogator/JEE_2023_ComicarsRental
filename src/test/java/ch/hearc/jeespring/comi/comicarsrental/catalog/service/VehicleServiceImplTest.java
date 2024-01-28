@@ -80,7 +80,7 @@ class VehicleServiceImplTest {
         // Arrange
         Long vehicleId = 1L;
         Vehicle existingVehicle = new Vehicle();
-        when(vehicleRepository.findById(Math.toIntExact(vehicleId))).thenReturn(Optional.of(existingVehicle));
+        when(vehicleRepository.findById(vehicleId)).thenReturn(Optional.of(existingVehicle));
 
         // Act
         Optional<Vehicle> result = vehicleService.getVehicleById(vehicleId);
@@ -94,7 +94,7 @@ class VehicleServiceImplTest {
     void getVehicleById_withNonExistingId_shouldReturnEmptyOptional() {
         // Arrange
         Long nonExistingVehicleId = 999L;
-        when(vehicleRepository.findById(Math.toIntExact(nonExistingVehicleId))).thenReturn(Optional.empty());
+        when(vehicleRepository.findById(nonExistingVehicleId)).thenReturn(Optional.empty());
 
         // Act
         Optional<Vehicle> result = vehicleService.getVehicleById(nonExistingVehicleId);
@@ -107,7 +107,7 @@ class VehicleServiceImplTest {
     void vehicleExists_withExistingId_shouldReturnTrue() {
         // Arrange
         Long vehicleId = 1L;
-        when(vehicleRepository.existsById(Math.toIntExact(vehicleId))).thenReturn(true);
+        when(vehicleRepository.existsById(vehicleId)).thenReturn(true);
 
         // Act
         boolean result = vehicleService.vehicleExists(vehicleId);
@@ -120,7 +120,7 @@ class VehicleServiceImplTest {
     void vehicleExists_withNonExistingId_shouldReturnFalse() {
         // Arrange
         Long nonExistingVehicleId = 999L;
-        when(vehicleRepository.existsById(Math.toIntExact(nonExistingVehicleId))).thenReturn(false);
+        when(vehicleRepository.existsById(nonExistingVehicleId)).thenReturn(false);
 
         // Act
         boolean result = vehicleService.vehicleExists(nonExistingVehicleId);
@@ -138,7 +138,7 @@ class VehicleServiceImplTest {
         vehicleService.deleteVehicle(vehicleId);
 
         // Assert
-        verify(vehicleRepository, times(1)).deleteById(Math.toIntExact(vehicleId));
+        verify(vehicleRepository, times(1)).deleteById(vehicleId);
     }
 
     @Test

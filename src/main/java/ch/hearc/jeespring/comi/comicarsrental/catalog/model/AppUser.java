@@ -2,6 +2,10 @@ package ch.hearc.jeespring.comi.comicarsrental.catalog.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Entity class representing an application user.
+ * Author : Alessio Comi.
+ */
 @Entity
 public class AppUser {
     @Id
@@ -10,7 +14,6 @@ public class AppUser {
     private String username;
     private String password;
     private String email;
-    private String role;
 
     // Constructors
     public AppUser() {
@@ -20,46 +23,14 @@ public class AppUser {
         this.username = username;
         this.password = password;
         this.email = email;
-        this.role = role;
-    }
-
-    // Getters and setters
-    public Long getUserId() {
-        return userId;
     }
 
     public void setUserId(Long userId) {
         this.userId = userId;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getUsername() {
         return username;
     }
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
 }

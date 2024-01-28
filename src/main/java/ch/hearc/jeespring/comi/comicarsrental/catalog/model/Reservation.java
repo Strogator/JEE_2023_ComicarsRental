@@ -4,6 +4,10 @@ import java.util.Date;
 
 import jakarta.persistence.*;
 
+/**
+ * Entity class representing a reservation.
+ * Author : Alessio Comi.
+ */
 @Entity
 public class Reservation {
     @Id
@@ -23,7 +27,6 @@ public class Reservation {
     private String status;
 
     // Getters and setters
-
 
     public Long getReservationId() {
         return reservationId;

@@ -2,6 +2,10 @@ package ch.hearc.jeespring.comi.comicarsrental.catalog.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Entity class representing a vehicle.
+ * Author : Alessio Comi.
+ */
 @Entity
 public class Vehicle {
     @Id
@@ -12,7 +16,6 @@ public class Vehicle {
     private String model;
     private Integer manufacturingYear;
     private double rentalRate;
-
 
     public Vehicle() {
 
@@ -55,8 +58,8 @@ public class Vehicle {
         return manufacturingYear;
     }
 
-    public void setManufacturingYear(Integer manufacturing_year) {
-        this.manufacturingYear = manufacturing_year;
+    public void setManufacturingYear(Integer manufacturingYear) {
+        this.manufacturingYear = manufacturingYear;
     }
 
     public double getRentalRate() {

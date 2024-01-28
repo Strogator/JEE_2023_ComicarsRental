@@ -10,6 +10,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Service implementation for managing Vehicle entities.
+ * Author : Alessio Comi.
+ */
 @Service
 public class VehicleServiceImpl implements VehicleService {
 
@@ -49,17 +53,17 @@ public class VehicleServiceImpl implements VehicleService {
 
     @Override
     public Optional<Vehicle> getVehicleById(Long vehicleId) {
-        return vehicleRepository.findById(Math.toIntExact(vehicleId));
+        return vehicleRepository.findById(vehicleId);
     }
 
     @Override
     public boolean vehicleExists(Long vehicleId) {
-        return vehicleRepository.existsById(Math.toIntExact(vehicleId));
+        return vehicleRepository.existsById(vehicleId);
     }
 
     @Override
     public void deleteVehicle(Long vehicleId) {
-        vehicleRepository.deleteById(Math.toIntExact(vehicleId));
+        vehicleRepository.deleteById(vehicleId);
     }
 
     @Override

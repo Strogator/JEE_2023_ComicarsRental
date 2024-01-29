@@ -25,6 +25,7 @@ public class AppUser {
         this.email = email;
     }
 
+    // Getter and Setters
     public void setUserId(Long userId) {
         this.userId = userId;
     }
@@ -32,5 +33,7 @@ public class AppUser {
     public String getUsername() {
         return username;
     }
+
+    public void setUsername(String username) {this.username = username;}
 
 }

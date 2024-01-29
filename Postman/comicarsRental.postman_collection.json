@@ -1,0 +1,254 @@
+{
+  "info": {
+    "_postman_id": "e4131dea-81fd-407e-ab00-9e31df0a4a48",
+    "name": "ComicarsRental",
+    "description": "A preconfiguration to add two users and five car in the database",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32602085"
+  },
+  "item": [
+    {
+      "name": "add first user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"Alessio Comi\",\r\n    \"password\": \"motdepasse1\",\r\n    \"email\": \"alessio.comi@email.com\",\r\n    \"role\": \"ADMIN\"\r\n  }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/users/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "users",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add second user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"Vincent Jeannin\",\r\n    \"password\": \"motdepasse1\",\r\n    \"email\": \"Vincent.Jeannin@email.com\",\r\n    \"role\": \"USER\"\r\n  }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/users/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "users",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add first vehicle",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"brand\": \"Fiat\",\r\n    \"model\": \"Panda\",\r\n    \"manufacturingYear\": 2014,\r\n    \"rentalRate\": 25.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehicles/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehicles",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add second vehicle",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"brand\": \"Fiat\",\r\n    \"model\": \"500\",\r\n    \"manufacturingYear\": 2018,\r\n    \"rentalRate\": 50.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehicles/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehicles",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add third vehicle",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"brand\": \"Volvo\",\r\n    \"model\": \"XC90\",\r\n    \"manufacturingYear\": 2017,\r\n    \"rentalRate\": 75.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehicles/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehicles",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add fourth vehicle",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"brand\": \"Mazda\",\r\n    \"model\": \"mx5\",\r\n    \"manufacturingYear\": 1991,\r\n    \"rentalRate\": 70.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehicles/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehicles",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add fifth vehicle",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"brand\": \"Audi\",\r\n    \"model\": \"A4\",\r\n    \"manufacturingYear\": 2022,\r\n    \"rentalRate\": 85.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehicles/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehicles",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "see list of vehicle",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehicles/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehicles",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

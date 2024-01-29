@@ -41,7 +41,7 @@ public class AppUserController {
      * @param user The user details.
      * @return ResponseEntity indicating the success or failure of the user registration.
      */
-    @PostMapping("/register")
+    @PostMapping("/")
     public ResponseEntity<String> registerUser(@RequestBody AppUser user) {
         if (userService.existsByUsername(user.getUsername())) {
             return new ResponseEntity<>("Username already exists", HttpStatus.BAD_REQUEST);
